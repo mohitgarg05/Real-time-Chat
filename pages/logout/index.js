@@ -1,7 +1,7 @@
 
 import React,{useEffect,useState} from 'react';
 import firebase from 'firebase/compat/app';
-import {auth,provider,db} from '../firebaseConfig.js';
+import {auth,provider,db} from '../../firebaseConfig.js';
 import Message from '../message';
 import { collection, 
         query, 
@@ -135,7 +135,7 @@ const Mainpage = () => {
 
                 <div className={style.all_users}>
                     <div className={style.upperDiv}>
-                        <p>{auth.currentUser.displayName} Chat</p>
+                        <p>{auth.currentUser?.displayName} Chat</p>
                     </div>
                     {UsersData.map((item)=>{
                         return(
@@ -153,7 +153,7 @@ const Mainpage = () => {
                         <p>{SelectedUser?.name}</p>
                     </div>
                     <div className={style.over}>   
-                        {SelectedUser?<Message selfId = {auth.currentUser.uid} callback={handleCallback} combine = {CombinedId} /> : <p className={style.emptyMessage}>Open the chat</p>}
+                        {SelectedUser?<Message selfId = {auth.currentUser?.uid} callback={handleCallback} combine = {CombinedId} /> : <p className={style.emptyMessage}>Open the chat</p>}
                     </div>
                     <div className={style.msgInput} >
                         <input type='text' name='message' value={newMessage} onChange={(e)=>setnewMessage(e.target.value)} placeholder='Enter Message' />

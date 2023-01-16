@@ -1,5 +1,5 @@
 import React from 'react';
-import {auth , provider}  from '../firebaseConfig.js';
+import {auth , provider}  from '../../firebaseConfig.js';
 import style from '../../styles/login.module.css';
 import {doc , setDoc} from 'firebase/firestore';
 const Login = () => {

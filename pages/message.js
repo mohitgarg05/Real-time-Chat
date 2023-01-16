@@ -1,7 +1,7 @@
 import { doc, onSnapshot } from 'firebase/firestore'
 import React,{useEffect,useState,useRef} from 'react'
 import style from '../styles/message.module.css';
-import {auth,provider,db} from './firebaseConfig.js';
+import {auth,provider,db} from '../firebaseConfig.js';
 const message = (props) => {
 
 const [Messages, setMessages] = useState([])
