@@ -1,0 +1,134 @@
+.container{
+    height: 65px;
+    padding: 5px;
+    background-color: rgb(168,188,255);
+    display: flex;
+}
+
+.container h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-left: 50px;
+}
+
+.container button{
+    border: none;
+    margin-left: auto;
+    margin-right: 50px;
+    width: 190px;
+    font-size: 27px;
+    background-color: rgb(53,51,84);
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.wrapper{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    height: 85vh;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.all_users{
+
+    padding: 10px;
+    width: 30%;
+    background-color: rgb(53,51,84);
+}
+
+.searchBox{
+    height: 30px;
+}
+
+.searchBox input{
+    width: 70%;
+    height: inherit;
+}  
+
+.upperDiv{
+    background-color: rgb(47,44,83);
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    color: white;
+}
+
+.upperDiv p{
+    
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+.user_wrapper{
+    display: flex;
+    padding: 10px;
+    color: white;
+}
+
+.user_wrapper img{
+    border-radius: 50%;
+    width: 60px;
+}
+
+.user_wrapper p{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+
+
+.msgcontainer{
+    width: 70%;
+    background-color: rgb(221,220,247);
+    position: relative;
+   
+}
+
+.loggedInUser{
+    height: 8vh;
+    background-color: rgb(95,91,143);
+}
+
+.loggedInUser p{
+    margin: 0;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+
+.msgInput{  
+    width: 100%;
+    height: 8vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.msgInput input{
+    height: 8vh;
+    width: 95%;
+    border-radius: inherit;
+}
+
+.msgInput button{
+    width: 13%;
+    background-color: rgb(95,91,143);
+    color: white;
+    font-size: 20px;
+    border-radius: inherit;
+    outline: none;
+    border: none;
+}
+.msgInput input[type=text]{
+    font-size: 20px;
+    padding-left: 10px;
+}

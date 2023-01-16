@@ -1,0 +1,31 @@
+.btnwrapper{
+
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+
+.googlebuttn{
+    border: none;
+    width: 500px;
+    height: 65px;
+    font-size: 35px;
+    background-color: rgb(53,51,84);
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.container{
+    height: 65px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(168,188,255);
+}
+
+.container h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
