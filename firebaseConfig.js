@@ -6,7 +6,7 @@ import {getFirestore} from 'firebase/firestore';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDDXvPPyCJ8JUVV4BgPOXpw3sQWFjIH7Bk",
-    authDomain: "https://real-time-chat-alpha.vercel.app/",
+    authDomain: "real-time-chat-10c5d.firebaseapp.com",
     projectId: "real-time-chat-10c5d",
     storageBucket: "real-time-chat-10c5d.appspot.com",
     messagingSenderId: "534298369372",
