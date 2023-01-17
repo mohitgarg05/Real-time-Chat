@@ -10,7 +10,7 @@ const bottomRef = useRef(null);
     useEffect(() => {
 
         if(props.combine){
-            const unSub = onSnapshot(doc(db,"chats",props.combine),(doc)=>{
+            onSnapshot(doc(db,"chats",props.combine),(doc)=>{
                 doc.exists() && setMessages(doc.data().message);
             })
         }
@@ -23,9 +23,8 @@ const bottomRef = useRef(null);
     
 
     useEffect(() => {
-        bottomRef.current?.scrollIntoView({behavior: 'smooth'})
-   
-        props.callback(bottomRef)
+    
+        bottomRef.current.scrollTop = bottomRef.current.scrollHeight - bottomRef.current.clientHeight;
       }, [Messages]);
     
 

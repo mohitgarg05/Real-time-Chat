@@ -46,6 +46,10 @@ const Mainpage = () => {
         auth.signOut();
     }
 
+    useEffect(() => {
+        console.log(Pic.src)
+    }, [])
+    
   
 
     const handleClick = async(item)=>{
@@ -116,15 +120,11 @@ const Mainpage = () => {
     }
     
     const handleCallback = (bottomRef)=>{
-        window.scrollTo({
-            bottom: 0,
-            behavior: 'smooth',
-        });
-    }
+          }
 
 
     return (
-        <div>
+        <>
             <div className={style.container}>
                 <h2>React Chat</h2>
                 <button onClick={logout}>
@@ -141,7 +141,7 @@ const Mainpage = () => {
                         return(
                             <>
                                 <div key={item.uid} className={style.user_wrapper} onClick={()=>handleClick(item)} >
-                                    <img src={item.pic?item.pic : Pic} alt={Pic}></img>
+                                    <img src={item.pic?item.pic : Pic.src} alt="Profile Pic"></img>
                                     <p>{item.name}</p>
                                 </div>
                             </>
@@ -162,7 +162,7 @@ const Mainpage = () => {
                 </div>
             </div>
          
-        </div>
+        </>
     );
 }
   
